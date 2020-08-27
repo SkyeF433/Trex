@@ -10,6 +10,7 @@ var score;
 var PLAY = 1;
 var END = 0;
 var gameState = PLAY;
+var score = 0;
 
 var gameoverImage,gameover,restart,restartImage;
 
@@ -51,8 +52,6 @@ function setup() {
   
   cloudsGroup = new Group();
   obstaclesGroup = new Group();
-  
-  score = 0;
   
   restart=createSprite(300,140);
   restart.addImage(restartImage);
